@@ -3,15 +3,51 @@
 <head>
     <title>welcome page</title>
     <meta charset="utf-8">
+    <style>
+        body{
+            margin: 0;
+        }
+        a {
+            color:black;
+            text-decoration: none;
+        }
+        h1 {
+            font-size: 45px;
+            text-align: center;
+            border-bottom: 1px solid gray;
+            margin:0;
+            padding: 20px;
+        }
+        ol{
+            border-right: 1px solid gray;
+            width: 150px;
+            margin: 0;
+            padding: 20px;
+        }
+        #grid{
+            display: grid;
+            grid-template-columns: 200px 1fr;
+        }
+        #grid ol{
+            padding-left: 32px;
+        }
+        #article{
+            padding-left: 25px;
+        }
+    </style>
 </head>
 
 <body>
     <h1><a href="index.html">Somin's webpage</a></h1>
-    <ol>
-        <li><a href="welcome.html">welcome page</a></li>
-        <li><a href="about.html">about</a></li>
-    </ol>
-    <h2>welcome page</h2>
-    <p>저의 웹페이지에 오신걸 환영합니다^_^</p>
+    <div id="grid">
+        <ol>
+            <li><a href="welcome.html" style="color:orange">welcome page</a></li>
+            <li><a href="about.html">about</a></li>
+        </ol>
+        <div id="article">
+            <h2>welcome page</h2>
+            <p>저의 웹페이지에 오신걸 환영합니다^_^</p>
+        </div>
+    </div>
 </body>
 </html>
